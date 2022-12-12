@@ -1,4 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
 :root {
-  --main-bg-color: #ffc700;
+  --header-bg-color: #ffc700;
+  --main-bg-color: #1E1E1E;
+}
+
+.fondo-amarillo {
+  background-color: var(--header-bg-color);
+}
+
+.fondo-gris {
+  background-color: var(--main-bg-color);
 }
