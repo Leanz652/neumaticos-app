@@ -11,3 +11,13 @@
 .fondo-gris {
   background-color: var(--main-bg-color);
 }
+
+@font-face {
+  font-family: orator;
+  src: url(./assets/fonts/OratorStd-Slanted.otf) format("opentype");
+}
+
+.menu-font {
+  font-family: 'orator', 'arial', sans-serif;
+  color: white;
+}

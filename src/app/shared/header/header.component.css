@@ -1,0 +1,19 @@
+.borde-inferior-amarillo {
+  border-bottom: 2px solid;
+  border-color: var(--header-bg-color);
+}
+
+.item-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+}
+
+.item-nav:hover {
+    cursor: pointer;
+    border: 0.5px solid;
+    border-width: 0px 1px 0px 1px;
+    border-color: var(--header-bg-color);
+}
