@@ -8,6 +8,10 @@ const routes: Routes = [
     component: HomeComponent,
   },
   {
+    path: 'nuevas',
+    component: HomeComponent,
+  },
+  {
     path: '',
     redirectTo: '/home',
     pathMatch: 'full',

@@ -11,19 +11,25 @@
   </div>
 
   <nav
-    class="d-flex align-items-center gap-5 menu-font container-xxl"
+    class="d-flex align-items-center menu-font container-xxl"
     style="height: 50px"
   >
     <a
-      [routerLink]="['/']"
-      routerLinkActive="router-link-active"
+      [routerLink]="['/home']"
+      routerLinkActive="linkActivo"
       class="item-nav text-white text-decoration-none"
       >Home</a
     >
-    <a [routerLink]="['/']" class="item-nav text-white text-decoration-none"
+    <a
+      [routerLink]="['/nuevas']"
+      routerLinkActive="linkActivo"
+      class="item-nav text-white text-decoration-none"
       >Primera Mano</a
     >
-    <a [routerLink]="['/']" class="item-nav text-white text-decoration-none"
+    <a
+      [routerLink]="['/usadas']"
+      routerLinkActive="linkActivo"
+      class="item-nav text-white text-decoration-none"
       >Segunda Mano</a
     >
   </nav>

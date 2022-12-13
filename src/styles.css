@@ -21,3 +21,18 @@
   font-family: 'orator', 'arial', sans-serif;
   color: white;
 }
+
+.font-white {
+  font-family: 'orator', 'arial', sans-serif;
+  color: white
+}
+
+.font-yellow {
+  font-family: 'orator', 'arial', sans-serif;
+  color: var(--header-bg-color);
+}
+
+
+.linkActivo{
+  background-color: #203E5F;
+}
