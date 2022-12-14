@@ -26,13 +26,11 @@ export class FinderComponent {
   }
 
   botonASeleccionar(boton: Element) {
-    console.log('pase por aqui');
     boton.classList.add('fondo-amarillo');
     boton.classList.remove('fondo-disable');
   }
 
   botonADeshabilitar(boton: Element) {
-    console.log('no pase por aqui');
     boton.classList.remove('fondo-amarillo');
     boton.classList.add('fondo-disable');
   }
