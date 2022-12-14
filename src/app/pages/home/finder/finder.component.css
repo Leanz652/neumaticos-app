@@ -1,21 +1,30 @@
 .boton-finder {
-    cursor: pointer;
-    width: 225px;
+  cursor: pointer;
+  width: 225px;
 }
 
-.form-card{
-    width: 500px;
-    height: 300px;
+.form-card {
+  width: 500px;
+  height: 300px;
 }
 
 .icono {
-    height: 50px;
+  height: 50px;
 }
 
+.fondo-amarillo {
+  background-color: var(--header-bg-color);
+  color: black;
+}
+
+.fondo-disable {
+  background-color: #8b8a8ab0;
+  color: white;
+}
 
 .boton-finder:active {
-    transform: scale(0.98);
-    /* Scaling button to 0.98 to its original size */
-    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
-    /* Lowering the shadow */
+  transform: scale(0.98);
+  /* Scaling button to 0.98 to its original size */
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+  /* Lowering the shadow */
 }

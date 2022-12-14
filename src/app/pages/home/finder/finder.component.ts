@@ -6,9 +6,34 @@ import { Component } from '@angular/core';
   styleUrls: ['./finder.component.css'],
 })
 export class FinderComponent {
-  activateButton() {
+  esVehiculo = true;
+
+  activateButton(event: string) {
     const botones = document.querySelectorAll('.boton-finder');
 
-    console.log(botones);
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    botones.forEach((boton: any) => {
+      boton.dataset.tipo.includes(event)
+        ? this.botonASeleccionar(boton)
+        : this.botonADeshabilitar(boton);
+    });
+
+    if (event == 'vehiculo') {
+      this.esVehiculo = true;
+    } else {
+      this.esVehiculo = false;
+    }
+  }
+
+  botonASeleccionar(boton: Element) {
+    console.log('pase por aqui');
+    boton.classList.add('fondo-amarillo');
+    boton.classList.remove('fondo-disable');
+  }
+
+  botonADeshabilitar(boton: Element) {
+    console.log('no pase por aqui');
+    boton.classList.remove('fondo-amarillo');
+    boton.classList.add('fondo-disable');
   }
 }

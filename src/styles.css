@@ -46,3 +46,11 @@
 .fondo-azul{
   background-color: #2462a4;
 }
+
+.float{
+  height: 60px;
+	position:fixed;
+	bottom:20px;
+	right:20px;
+  z-index:100;
+}

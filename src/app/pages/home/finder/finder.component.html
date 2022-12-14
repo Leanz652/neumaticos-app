@@ -10,30 +10,100 @@
   <div class="d-flex mt-4 container-xxl flex-column gap-3">
     <div class="d-flex gap-3">
       <div
-        (click)="activateButton()"
+        (click)="activateButton('vehiculo')"
+        data-tipo="vehiculo"
         class="d-flex boton-finder p-3 rounded-4 gap-2 align-items-center fondo-amarillo"
       >
         <img class="icono" src="../../../../assets/icons/ic_logo_auto.svg" />
-        <span class="font-black"
+        <span
           >BUSCAR POR <br />
           VEHICULO</span
         >
       </div>
       <div
-        (click)="activateButton()"
+        (click)="activateButton('rodado')"
+        data-tipo="rodado"
         class="d-flex boton-finder p-3 rounded-4 gap-4 align-items-center fondo-disable"
       >
         <img
           class="icono"
           src="../../../../assets/icons/ic_logo_neumatico.svg"
         />
-        <span class="font-white"
+        <span class=""
           >BUSCAR POR <br />
           RODADO</span
         >
       </div>
     </div>
 
-    <div class="fondo-amarillo rounded-3 form-card"></div>
+    <div class="fondo-amarillo rounded-3 form-card p-3">
+      <form>
+        <div *ngIf="esVehiculo" class="form-group">
+          <label for="marca" class="font-black"
+            >Selecciona la marca de tu vehiculo:</label
+          >
+          <select class="form-control mb-2" id="marca">
+            <option>AUDI</option>
+            <option>BMW</option>
+            <option>HONDA</option>
+            <option>TOYOTA</option>
+            <option>VOLKSWAGEN</option>
+          </select>
+
+          <label for="modelo" class="font-black">Selecciona modelo:</label>
+          <select class="form-control mb-2" id="modelo">
+            <option>2010</option>
+            <option>2011</option>
+            <option>2012</option>
+            <option>2013</option>
+            <option>2014</option>
+          </select>
+
+          <label for="linea" class="font-black">Selecciona linea:</label>
+          <select class="form-control mb-2" id="linea">
+            <option>Corvette</option>
+            <option>Corvette</option>
+            <option>Corvette</option>
+            <option>Corvette</option>
+            <option>Corvette</option>
+          </select>
+        </div>
+
+        <div *ngIf="!esVehiculo" class="form-group">
+          <label for="ancho" class="font-black">Selecciona ancho:</label>
+          <select class="form-control mb-2" id="ancho">
+            <option>28</option>
+            <option>29</option>
+            <option>30</option>
+            <option>31</option>
+            <option>32</option>
+          </select>
+
+          <label for="perfil" class="font-black">Selecciona perfil:</label>
+          <select class="form-control mb-2" id="perfil">
+            <option>10.5</option>
+            <option>11</option>
+            <option>12</option>
+            <option>13</option>
+            <option>14</option>
+          </select>
+
+          <label for="rin" class="font-black">Selecciona rin:</label>
+          <select class="form-control mb-2" id="rin">
+            <option>Corvette</option>
+            <option>Corvette</option>
+            <option>Corvette</option>
+            <option>Corvette</option>
+            <option>Corvette</option>
+          </select>
+        </div>
+
+        <a
+          target="_blank"
+          href="https://wa.me/573107695856?text=Hola, estoy interesado en llantas."
+          ><div class="btn btn-primary">Contactarme con un asesor</div></a
+        >
+      </form>
+    </div>
   </div>
 </div>
