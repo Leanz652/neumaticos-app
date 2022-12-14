@@ -104,7 +104,7 @@
         },
         "deploy": {
           "builder": "angular-cli-ghpages:deploy",
-          "options": {    "baseHref": "/neumaticos-app"}
+          "options": {    "baseHref": "/neumaticos-app/"}
         }
       }
     }
