@@ -103,7 +103,10 @@
           }
         },
         "deploy": {
-          "builder": "angular-cli-ghpages:deploy"
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "baseHref": "https://Leanz652.github.io/neumaticos-app/"
+          }
         }
       }
     }
