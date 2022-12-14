@@ -1,9 +1,39 @@
 <div class="d-flex flex-column container-xxl">
-  <h2 class="font-yellow">
+  <h2 class="font-yellow text-center">
     ¿NECESITÁS ENCONTRAR LOS NEUMÁTICOS PERFECTOS PARA TU VEHÍCULO?
   </h2>
   <h6 class="font-white text-center">
     Utilizá el buscador para encontrar tu llanta, podes hacerlo por modelo de
     auto o por tamaño de rodado
   </h6>
+
+  <div class="d-flex mt-4 container-xxl flex-column gap-3">
+    <div class="d-flex gap-3">
+      <div
+        (click)="activateButton()"
+        class="d-flex boton-finder p-3 rounded-4 gap-2 align-items-center fondo-amarillo"
+      >
+        <img class="icono" src="../../../../assets/icons/ic_logo_auto.svg" />
+        <span class="font-black"
+          >BUSCAR POR <br />
+          VEHICULO</span
+        >
+      </div>
+      <div
+        (click)="activateButton()"
+        class="d-flex boton-finder p-3 rounded-4 gap-4 align-items-center fondo-disable"
+      >
+        <img
+          class="icono"
+          src="../../../../assets/icons/ic_logo_neumatico.svg"
+        />
+        <span class="font-white"
+          >BUSCAR POR <br />
+          RODADO</span
+        >
+      </div>
+    </div>
+
+    <div class="fondo-amarillo rounded-3 form-card"></div>
+  </div>
 </div>

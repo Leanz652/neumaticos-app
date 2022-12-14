@@ -8,6 +8,10 @@
   background-color: var(--header-bg-color);
 }
 
+.fondo-disable{
+  background-color: #8b8a8ab0
+}
+
 .fondo-gris {
   background-color: var(--main-bg-color);
 }
@@ -18,13 +22,20 @@
 }
 
 .menu-font {
-  font-family: 'orator', 'arial', sans-serif;
   color: white;
+  font-family: 'orator', 'arial', sans-serif;
+
 }
 
 .font-white {
+  color: white;
   font-family: 'orator', 'arial', sans-serif;
-  color: white
+}
+
+.font-black {
+  color: black;
+  font-family: 'orator', 'arial', sans-serif;
+
 }
 
 .font-yellow {
@@ -32,7 +43,6 @@
   color: var(--header-bg-color);
 }
 
-
-.linkActivo{
-  background-color: #203E5F;
+.fondo-azul{
+  background-color: #2462a4;
 }
