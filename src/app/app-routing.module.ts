@@ -12,6 +12,10 @@ const routes: Routes = [
     component: HomeComponent,
   },
   {
+    path: 'usadas',
+    component: HomeComponent,
+  },
+  {
     path: '',
     redirectTo: '/home',
     pathMatch: 'full',

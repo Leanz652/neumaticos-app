@@ -9,7 +9,7 @@
 }
 
 .icono {
-  height: 50px;
+  max-height: 50px;
 }
 
 .fondo-amarillo {
