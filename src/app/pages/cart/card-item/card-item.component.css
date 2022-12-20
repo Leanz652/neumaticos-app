@@ -1,3 +1,8 @@
 .card-neumatico {
-    height: 175px;
+  height: 175px;
+}
+
+.font-card {
+  color: rgb(100, 100, 100);
+  font-size: 12px;
 }
