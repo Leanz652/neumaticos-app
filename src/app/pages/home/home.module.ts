@@ -4,9 +4,15 @@ import { CarousellComponent } from './carousell/carousell.component';
 import { FinderComponent } from './finder/finder.component';
 import { HomeComponent } from './home.component';
 import { CarousellBrandsComponent } from './carousell-brands/carousell-brands.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
-  declarations: [CarousellComponent, FinderComponent, HomeComponent, CarousellBrandsComponent],
-  imports: [CommonModule],
+  declarations: [
+    CarousellComponent,
+    FinderComponent,
+    HomeComponent,
+    CarousellBrandsComponent,
+  ],
+  imports: [CommonModule, RouterModule],
 })
 export class HomeModule {}

@@ -4,5 +4,11 @@
 
 .font-card {
   color: rgb(100, 100, 100);
-  font-size: 12px;
+  font-size: 10px;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
