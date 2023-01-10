@@ -1,3 +1,9 @@
 .font-items {
   font-size: 14px;
+  color: black;
+}
+
+.font-items:hover {
+  font-size: 14px;
+  color: grey;
 }

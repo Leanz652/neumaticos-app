@@ -1,1 +1,25 @@
-<app-cart-layout></app-cart-layout>
+<div class="d-flex flex-column minHeight">
+  <div class="container-xxl mt-3 pb-3">
+    <div class="row flex-grow-1">
+      <app-sider class="d-none d-md-block col-md-2"></app-sider>
+      <div class="col-12 col-md-8">
+        <div class="d-flex flex-column w-100 gap-4">
+          <app-card-item
+            *ngFor="
+              let item of colecion
+                | paginate : { itemsPerPage: 3, currentPage: p }
+            "
+          ></app-card-item>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <pagination-controls
+    class="text-center font-white my-pagination disable hover mt-auto"
+    [autoHide]="true"
+    (pageChange)="p = $event"
+    previousLabel="Anterior"
+    nextLabel="Siguiente"
+  ></pagination-controls>
+</div>

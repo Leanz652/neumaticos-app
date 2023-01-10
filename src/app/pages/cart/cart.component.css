@@ -1,0 +1,17 @@
+.my-pagination ::ng-deep .ngx-pagination .current  {
+    background-color: #2462a4;
+  }
+  
+.disable ::ng-deep .ngx-pagination .disabled {
+    opacity: 40%;
+    cursor:not-allowed;
+} 
+
+.hover ::ng-deep .ngx-pagination a:hover{
+    background-color: #2462a4;
+    opacity: 50%;
+}
+
+.minHeight {
+    min-height: 800px;
+}
