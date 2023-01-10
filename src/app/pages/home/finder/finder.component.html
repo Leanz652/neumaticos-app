@@ -30,7 +30,7 @@
     <div class="fondo-amarillo rounded-3 form-card p-3">
       <form>
         <div *ngIf="esVehiculo" class="form-group">
-          <label for="marca" class="font-black"
+          <label for="marca" class="font-black" id="marcaLabel"
             >Selecciona la marca de tu vehiculo:</label
           >
           <select class="form-control mb-2" id="marca">
@@ -95,7 +95,7 @@
           </select>
         </div>
 
-        <a [routerLink]="['/cart']"
+        <a id="buscador" [routerLink]="['/cart']"
           ><div class="btn mt-1 mt-md-3 btn-primary fondo-azul">Buscar</div></a
         >
       </form>
