@@ -21,6 +21,7 @@
       >Home</a
     >
     <a
+      *ngIf="isHome()"
       (click)="scroll('buscador')"
       class="item-nav text-white text-decoration-none"
       >Busca tu llanta</a
@@ -29,13 +30,13 @@
       [routerLink]="['/nuevas']"
       routerLinkActive="fondo-azul"
       class="item-nav text-white text-decoration-none"
-      >Primera Mano</a
+      >Info útil</a
     >
-    <a
+    <!--     <a
       [routerLink]="['/usadas']"
       routerLinkActive="fondo-azul"
       class="item-nav text-white text-decoration-none"
       >Segunda Mano</a
-    >
+    > -->
   </nav>
 </div>
