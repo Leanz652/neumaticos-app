@@ -28,38 +28,46 @@
     </div>
 
     <div class="fondo-amarillo rounded-3 form-card p-3">
-      <form>
+      <form [formGroup]="neumaticosForm">
         <div *ngIf="esVehiculo" class="form-group">
           <label for="marca" class="font-black" id="marcaLabel"
             >Selecciona la marca de tu vehiculo:</label
           >
-          <select class="form-control mb-2" id="marca">
-            <option selected hidden disabled>Elegí tu marca</option>
-            <option>AUDI</option>
-            <option>BMW</option>
-            <option>HONDA</option>
-            <option>TOYOTA</option>
-            <option>VOLKSWAGEN</option>
+          <select
+            class="form-control mb-2"
+            id="marca"
+            formControlName="marcaSelec"
+          >
+            <option hidden [value]="null" selected disabled>
+              Elegí tu marca
+            </option>
+            <option [value]="item" *ngFor="let item of dataMarcas">
+              {{ item }}
+            </option>
           </select>
 
           <label for="modelo" class="font-black">Selecciona modelo:</label>
-          <select class="form-control mb-2" id="modelo">
-            <option selected hidden disabled>Elegí tu modelo</option>
-            <option>2010</option>
-            <option>2011</option>
-            <option>2012</option>
-            <option>2013</option>
-            <option>2014</option>
+          <select
+            class="form-control mb-2"
+            id="modelo"
+            formControlName="modelo"
+          >
+            <option [value]="item" *ngFor="let item of dataAnio">
+              {{ item }}
+            </option>
+            <option [value]="null" selected hidden disabled>
+              Elegí tu modelo
+            </option>
           </select>
 
           <label for="linea" class="font-black">Selecciona linea:</label>
-          <select class="form-control mb-2" id="linea">
-            <option selected hidden disabled>Elegí tu linea</option>
-            <option>Corvette</option>
-            <option>Corvette</option>
-            <option>Corvette</option>
-            <option>Corvette</option>
-            <option>Corvette</option>
+          <select class="form-control mb-2" id="linea" formControlName="linea">
+            <option [value]="null" selected hidden disabled>
+              Elegí tu linea
+            </option>
+            <option [value]="item" *ngFor="let item of dataLinea">
+              {{ item }}
+            </option>
           </select>
         </div>
 
@@ -87,10 +95,6 @@
           <label for="rin" class="font-black">Selecciona rin:</label>
           <select class="form-control mb-2" id="rin">
             <option selected hidden disabled>Elegí el rin</option>
-            <option>Corvette</option>
-            <option>Corvette</option>
-            <option>Corvette</option>
-            <option>Corvette</option>
             <option>Corvette</option>
           </select>
         </div>

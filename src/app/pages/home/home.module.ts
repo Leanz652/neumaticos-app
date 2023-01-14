@@ -5,6 +5,7 @@ import { FinderComponent } from './finder/finder.component';
 import { HomeComponent } from './home.component';
 import { CarousellBrandsComponent } from './carousell-brands/carousell-brands.component';
 import { RouterModule } from '@angular/router';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,6 @@ import { RouterModule } from '@angular/router';
     HomeComponent,
     CarousellBrandsComponent,
   ],
-  imports: [CommonModule, RouterModule],
+  imports: [CommonModule, RouterModule, ReactiveFormsModule],
 })
 export class HomeModule {}
