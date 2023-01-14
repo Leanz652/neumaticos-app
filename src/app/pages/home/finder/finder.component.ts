@@ -47,6 +47,18 @@ export class FinderComponent implements OnInit {
         this.neumaticosForm.get('linea')?.enable();
       }
     });
+
+    this.neumaticosForm.get('linea')?.valueChanges.subscribe(() => {
+      if (this.marcaSelec?.value && this.modelo?.value && this.linea?.value) {
+        this.neumaticosService.dataSeleccionada.next(
+          this.neumaticosService.getRueda(
+            this.marcaSelec?.value,
+            this.modelo?.value,
+            this.linea?.value
+          )
+        );
+      }
+    });
   }
 
   get marcaSelec() {
@@ -55,6 +67,10 @@ export class FinderComponent implements OnInit {
 
   get modelo() {
     return this.neumaticosForm.get('modelo');
+  }
+
+  get linea() {
+    return this.neumaticosForm.get('linea');
   }
 
   activateButton(event: string) {

@@ -1,4 +1,6 @@
 import { Injectable } from '@angular/core';
+import { BehaviorSubject, Subject } from 'rxjs';
+import { __values } from 'tslib';
 
 export interface neumaticos {
   MARCA: string;
@@ -617,6 +619,8 @@ export class NeumaticosService {
     },
   ];
 
+  dataSeleccionada = new BehaviorSubject({});
+
   dataMarcas: string[] = [
     'SUZUKI',
     'PEUGEOT',
@@ -660,7 +664,14 @@ export class NeumaticosService {
 
   getDataNeumaticosPorMarcaYAnio(marca: string, anio: string) {
     return this.dataNeumaticos
-      .filter((value) => value.MARCA == marca && anio == anio)
+      .filter((value) => value.MARCA == marca && value.Año == anio)
       .map((valor) => valor.Modelo);
+  }
+
+  getRueda(marca: string, anio: string, modelo: string) {
+    return this.dataNeumaticos.filter(
+      (value) =>
+        value.MARCA == marca && value.Año == anio && value.Modelo == modelo
+    );
   }
 }
